@@ -25,6 +25,7 @@ public class SumOfOddNumbsOfAnTriangle {
         }
     return  sumOfOddNumbr;
     }
+    //could also be writte like: n*n*n LOL!
     public static void main(String[] args) {
         System.out.println(rowSumOddNumbers(42));
     }
