@@ -9,8 +9,6 @@ public class Calculator {
 
         ScriptEngineManager s = new ScriptEngineManager();
         ScriptEngine engine = s.getEngineByName("JavaScript");
-
-
         try {
         Double result = new Double((engine.eval(expression).toString()));
             return result;
@@ -20,7 +18,6 @@ public class Calculator {
             return 0.0;
         }
     }
-
     public static void main(String[] args) {
         System.out.println(evaluate("2 / 2 + 3 * 4 - 6")); // => 7.0
     }
