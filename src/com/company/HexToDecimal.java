@@ -1,5 +1,5 @@
 package com.company;
-
+//Kyu(8) if I remember right
 public class HexToDecimal {
 
     public static int hexToDec(final String hexString) {

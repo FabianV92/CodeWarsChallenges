@@ -1,6 +1,5 @@
 package com.company;
-
-import java.util.ArrayList;
+//Kyu (7) or (8)
 //Given the triangle of consecutive odd numbers:
            /* 1
            3     5
@@ -13,17 +12,17 @@ public class SumOfOddNumbsOfAnTriangle {
     public static int rowSumOddNumbers(int n) {
     int rowIncrNumb = 1;
     int oddNumb  = 1;
-    int sumOfOddNumbr = 0;
+    int sumOfOddNumb = 0;
         for (int i = 1; i <= n ; i++) {
             for (int j = 0; j < rowIncrNumb ; j++) {
                 if (i == n) {
-                sumOfOddNumbr += oddNumb;
+                sumOfOddNumb += oddNumb;
                 }
                 oddNumb+=2;
             }
             rowIncrNumb++;
         }
-    return  sumOfOddNumbr;
+    return  sumOfOddNumb;
     }
     //Could also be written like: n*n*n LOL!
     public static void main(String[] args) {
