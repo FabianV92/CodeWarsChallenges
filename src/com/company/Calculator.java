@@ -1,8 +1,8 @@
 package com.company;
 import javax.script.ScriptEngineManager;
 import javax.script.ScriptEngine;
-//Kyu(3)
-//Create a simple calculator that given a string of operators (), +, -, *, /
+// Kyu(3)
+// Create a simple calculator that given a string of operators (), +, -, *, /
 // and numbers separated by spaces returns the value of that expression
 public class Calculator {
     public static Double evaluate(String expression) {
@@ -21,6 +21,5 @@ public class Calculator {
     public static void main(String[] args) {
         System.out.println(evaluate("2 / 2 + 3 * 4 - 6")); // => 7.0
     }
-
 }
 

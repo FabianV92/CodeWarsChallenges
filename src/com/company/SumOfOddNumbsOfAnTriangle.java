@@ -1,13 +1,13 @@
 package com.company;
-//Kyu (7) or (8)
-//Given the triangle of consecutive odd numbers:
+// Kyu (7) or (8)
+// Given the triangle of consecutive odd numbers:
            /* 1
            3     5
         7     9    11
      13    15    17    19
   21    23    25    27    29
 ...*/
-//Calculate the row sums of this triangle from the row index (starting at index 1)
+// Calculate the row sums of this triangle from the row index (starting at index 1)
 public class SumOfOddNumbsOfAnTriangle {
     public static int rowSumOddNumbers(int n) {
     int rowIncrNumb = 1;
@@ -24,7 +24,7 @@ public class SumOfOddNumbsOfAnTriangle {
         }
     return  sumOfOddNumb;
     }
-    //Could also be written like: n*n*n LOL!
+    // Could also be written like: n*n*n LOL!
     public static void main(String[] args) {
         System.out.println(rowSumOddNumbers(42));
     }
