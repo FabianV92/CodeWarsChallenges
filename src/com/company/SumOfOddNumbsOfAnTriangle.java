@@ -9,6 +9,7 @@ package com.company;
 ...*/
 // Calculate the row sums of this triangle from the row index (starting at index 1)
 public class SumOfOddNumbsOfAnTriangle {
+
     public static int rowSumOddNumbers(int n) {
     int rowIncrNumb = 1;
     int oddNumb  = 1;

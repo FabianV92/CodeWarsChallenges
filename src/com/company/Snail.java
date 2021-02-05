@@ -7,6 +7,7 @@ import java.util.Arrays;
 // Given an n x n array, return the array elements arranged from outermost elements to the middle
 // element, traveling clockwise.
 public class Snail {
+
     public static int[] snail(int[][] array) {
         int[] result = new int[1];
         int lengthOf2DemArr = array.length * array.length;

@@ -5,6 +5,7 @@ import javax.script.ScriptEngine;
 // Create a simple calculator that given a string of operators (), +, -, *, /
 // and numbers separated by spaces returns the value of that expression
 public class Calculator {
+
     public static Double evaluate(String expression) {
 
         ScriptEngineManager s = new ScriptEngineManager();
