@@ -26,7 +26,7 @@ public class VasyaClerk {
 
         int cash25 = 0;
         int cash50 = 0;
-        String anrwerYes = "YES";
+        String answerYes = "YES";
         String answerNo = "NO";
 
         // Looping through the array and build logic via switch case
@@ -59,7 +59,7 @@ public class VasyaClerk {
                 }
             }
         }
-        return anrwerYes;
+        return answerYes;
     }
 
     public static void main(String[] args) {
