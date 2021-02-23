@@ -1,4 +1,4 @@
-package com.company;
+package com.FabianCodeWars.kyu8Exercises;
 //Kyu(8) if I remember right
 public class HexToDecimal {
 

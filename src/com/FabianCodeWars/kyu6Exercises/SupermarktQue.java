@@ -1,4 +1,4 @@
-package com.company;
+package com.FabianCodeWars.kyu6Exercises;
 /*
 Kyu (6)
 The Supermarket Queue

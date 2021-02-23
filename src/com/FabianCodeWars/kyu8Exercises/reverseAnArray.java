@@ -1,4 +1,4 @@
-package com.company;
+package com.FabianCodeWars.kyu8Exercises;
 
 import java.util.Arrays;
 

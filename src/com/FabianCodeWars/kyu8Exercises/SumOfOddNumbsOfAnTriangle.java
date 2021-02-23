@@ -1,4 +1,4 @@
-package com.company;
+package com.FabianCodeWars.kyu8Exercises;
 // Kyu (7) or (8)
 // Given the triangle of consecutive odd numbers:
            /* 1

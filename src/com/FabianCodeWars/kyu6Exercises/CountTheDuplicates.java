@@ -1,4 +1,4 @@
-package com.company;
+package com.FabianCodeWars.kyu6Exercises;
 
 import java.util.HashSet;
 

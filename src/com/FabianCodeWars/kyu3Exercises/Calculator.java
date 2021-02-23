@@ -1,4 +1,4 @@
-package com.company;
+package com.FabianCodeWars.kyu3Exercises;
 import javax.script.ScriptEngineManager;
 import javax.script.ScriptEngine;
 // Kyu(3)

@@ -1,4 +1,4 @@
-package com.company;
+package com.FabianCodeWars.kyu5Exercises;
 /*
 Kyu(5)
 Greed is Good
