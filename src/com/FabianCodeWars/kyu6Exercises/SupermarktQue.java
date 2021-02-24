@@ -31,21 +31,26 @@ import java.util.Arrays;
 
 public class SupermarktQue {
 
+    /**
+     * Looping via for loop through each customer and give each cashier customers. Sort the cashier array via the
+     * arrays.sort method, which means the cashier with the index 0 will always be the cashier with the lessed
+     * amount of costumers.
+     *
+     * @param customers is the input customers array which contains integers, the amount of the customers.
+     * @param n         is an int, how many cashiers are available.
+     * @return returning the customers count of the cashier, which has the most customers.
+     */
     public static int solveSuperMarketQueue(int[] customers, int n) {
         int[] cashier = new int[n];
 
-        // Looping via  for loop through each customer and give each cashier customers
-        // And sort the cashier array via the arrays.sort method
-        // which means cashier with the index 0 will always be the cashier with the lessed amount of costumers
-        for (int i = 0; i < customers.length;i++) {
-                cashier[0] += customers[i];
-                Arrays.sort(cashier);
+        for (int i = 0; i < customers.length; i++) {
+            cashier[0] += customers[i];
+            Arrays.sort(cashier);
         }
-        // Returning the cashier with the most customers
-        return cashier[cashier.length-1];
+        return cashier[cashier.length - 1];
     }
 
     public static void main(String[] args) {
-        System.out.println(solveSuperMarketQueue(new int[]{5,3,4}, 1));// => should return 12
+        System.out.println(solveSuperMarketQueue(new int[]{5, 3, 4}, 1));// => should return 12
     }
 }

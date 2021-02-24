@@ -21,13 +21,20 @@ that occur more than once in the input string. The input string can be assumed t
 
 public class CountTheDuplicates {
 
+
+    /**
+     * Method Loops through the user input text and checking, if a letter repeats more than one time in the text, the
+     * letter will added to a HashSet. Which gives the exact value of how many duplicated values are in the text.
+     *
+     * @param text is the input String which contains only alphabets and numeric digits.
+     * @return Returns the size of the HasSet, which is the exact count of how many duplicated values in the input text
+     * exist.
+     */
     public static int duplicateCount(String text) {
 
-        text = text.toLowerCase().replaceAll("", "");
+        text = text.toLowerCase();
         HashSet<String> hs = new HashSet<>();
         int forLoopDupCounter = 0;
-        // Each letter gets checked if its duplicated in the text
-        // if so , they get added to the HashSet
         for (int i = 0; i < text.length(); i++) {
             for (int j = 0; j < text.length(); j++) {
                 if (text.substring(i, i + 1).equals(text.substring(j, j + 1))) {

@@ -22,6 +22,14 @@ Line.Tickets(new int[] {25, 25, 50, 50, 100}) // => NO. Vasya will not have the 
 
 public class VasyaClerk {
 
+    /**
+     * The method returns "YES" or "NO" depending if the cashier has enough money to exchange.
+     * Looping through the input int array and build logic via switch case and checking, if the first person hast too
+     * much cash to exchange.
+     *
+     * @param peopleInLine is the integer input array which contains the money bill each element(customer) has.
+     * @return returns an String with "YES" if the cashier can exchange all the money to the customers, else "NO".
+     */
     public static String Tickets(int[] peopleInLine) {
 
         int cash25 = 0;

@@ -19,10 +19,22 @@ regardless of the order.
 */
 
 public class AreTheyTheSame {
+
+    /**
+     * The method loops via for loop through both arrays and calculates the power of input array a and checks if
+     * the square root of array b element x exists in input array a and checks whether the two arrays have the
+     * "same" elements, with the same multiplicities.
+     *
+     * @param a is an input array which is containing integers.
+     * @param b is an input array which ist containing integers.
+     * @return returns true or false depending, if the square root of array b element x exists in input array a
+     * whether the two arrays have the "same" elements, with the same multiplicities.
+     */
     public static boolean comp(int[] a, int[] b) {
+
         int lengthOFArrNUmb = 1;
         if (a != null && b != null) {
-        // Avoiding nullPointerException with assigning here after the check
+            // Avoiding nullPointerException with assigning here after the check
             lengthOFArrNUmb = b.length;
             for (int k : a) {
                 for (int j = 0; j < b.length; j++) {
