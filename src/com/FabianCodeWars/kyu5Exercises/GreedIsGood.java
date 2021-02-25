@@ -1,4 +1,5 @@
 package com.FabianCodeWars.kyu5Exercises;
+
 /*
 Kyu(5)
 Greed is Good
@@ -24,6 +25,14 @@ according to these rules. You will always be given an array with five six-sided 
 */
 public class GreedIsGood {
 
+    /**
+     * The greedy method looping through the input dice array and increments each dice numbers via switch case
+     * and checks if dice condition met(see description) adds points to the return result.
+     *
+     * @param dice is an input integer array with five six-sided dice values.
+     * @return returns an integer with the total amount of points the six-sided dice rolled (see description for points
+     * evaluation).
+     */
     public static int greedy(int[] dice) {
 
         int nOne = 0, nTwo = 0, nThree = 0, nFour = 0,
@@ -60,13 +69,13 @@ public class GreedIsGood {
         }
 
         // Logic for adding points to the result
-        result += (nOne/3*1000)+ (nOne%3*100)+ (nTwo/3*200) + (nThree/3*300)
-                + (nFour/3*400) +(nFive/3*500) + (nFive%3*50) + (nSix/3*600);
+        result += (nOne / 3 * 1000) + (nOne % 3 * 100) + (nTwo / 3 * 200) + (nThree / 3 * 300)
+                + (nFour / 3 * 400) + (nFive / 3 * 500) + (nFive % 3 * 50) + (nSix / 3 * 600);
         return result;
     }
 
     public static void main(String[] args) {
-        System.out.println(greedy(new int[]{ 2,4,4,5,4})); // => 450
+        System.out.println(greedy(new int[]{2, 4, 4, 5, 4})); // => 450
 
     }
 }
