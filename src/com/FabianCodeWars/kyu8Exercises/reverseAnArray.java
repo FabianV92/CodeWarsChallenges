@@ -17,6 +17,13 @@ the same exact logics
 
 public class reverseAnArray {
 
+    /**
+     * The method loops through the given userInput String array and always sorts the array in a reversed way with the
+     * for each loop.
+     *
+     * @param userInput is a String array which input will be reversed.
+     * @return returns a reversed userInput String array.
+     */
     public static String[] fixTheMeerkat(String[] userInput) {
         String[] reversedArr = new String[userInput.length];
 
