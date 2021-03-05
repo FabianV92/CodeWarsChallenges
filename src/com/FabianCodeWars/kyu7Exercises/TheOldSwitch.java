@@ -17,15 +17,17 @@ E.g:
 public class TheOldSwitch {
 
     /**
+     * Method loops through a input String and checks if the current substring contains vocals, if so
+     * replace the current value with the current index.
      *
-     * @param s
-     * @return
+     * @param s String input contains letters.
+     * @return Returns a String with replaced index numbers instead of the vocals.
      */
     public static String vowel2Index(String s) {
         StringBuilder sb = new StringBuilder();
-        for(int i = 0; i < s.length();i++) {
-            sb = s.substring(i, i+1).matches("[aeiou]")? sb.append(i+1) :
-            sb.append(s.substring(i,i+1));
+        for (int i = 0; i < s.length(); i++) {
+            sb = s.substring(i, i + 1).matches("[aeiou]") ? sb.append(i + 1) :
+                    sb.append(s.substring(i, i + 1));
         }
         return sb.toString();
     }
